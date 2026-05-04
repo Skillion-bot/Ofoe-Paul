@@ -77,7 +77,12 @@ export default function Hero() {
                 <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/40"></div>
                 <div className="w-2.5 h-2.5 rounded-full bg-green-500/40"></div>
               </div>
-              <span className="text-[10px] font-mono text-slate-500">POINT_CLOUD_VIEWER_04.pcd</span>
+              <div className="flex items-center gap-2">
+                <span className="text-[10px] font-mono text-slate-500">POINT_CLOUD_VIEWER_04.pcd</span>
+                <div className="w-6 h-6 rounded-full border border-brand-primary/30 overflow-hidden bg-slate-800">
+                  <img src="/profile.jpg" alt="Ofoe Paul" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                </div>
+              </div>
             </div>
             
             <div className="flex-1 min-h-[300px] rounded-xl bg-slate-900 relative border border-white/5 flex items-center justify-center overflow-hidden">

@@ -72,8 +72,13 @@ export default function Contact() {
             className="p-1 px-1 rounded-3xl bg-gradient-to-br from-brand-primary/10 via-brand-secondary/5 to-transparent border border-white/10"
           >
             <div className="p-10 rounded-[22px] bg-brand-card/80 backdrop-blur-xl flex flex-col items-center text-center">
-              <div className="w-16 h-16 rounded-sm bg-brand-primary flex items-center justify-center mb-8 shadow-2xl shadow-brand-primary/20 rotate-3">
-                <MessageSquare size={28} className="text-brand-bg" />
+              <div className="relative mb-8">
+                <div className="w-24 h-24 rounded-2xl overflow-hidden shadow-2xl shadow-brand-primary/20 rotate-3 border-2 border-brand-primary">
+                   <img src="/profile.jpg" alt="Ofoe Paul" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                </div>
+                <div className="absolute -bottom-2 -right-2 w-8 h-8 rounded-full bg-brand-primary flex items-center justify-center text-brand-bg shadow-lg">
+                  <MessageSquare size={16} />
+                </div>
               </div>
               <h4 className="text-xl font-bold mb-2 uppercase tracking-tight italic">Status: Online</h4>
               <p className="text-slate-500 text-[10px] mb-8 font-mono tracking-widest font-bold">
